@@ -1,8 +1,31 @@
 # Antigravity Skills & Plugins Library
 
-A curated collection of modular skills and plugins for Google Antigravity and AI coding agents.
+A curated collection of 160+ modular skills and plugins for Google Antigravity, Claude Code, Cursor, and AI coding agents.
 
-This repository allows you to sync, version, and import your skills across different projects and environments.
+---
+
+## ⚡ Instant Install via `npx skills`
+
+You can install any skill directly from this repository into any project or globally across your PC using the **`skills` CLI**:
+
+### 1. Interactive Selection (Choose what you need)
+```bash
+npx skills add ikonicity-airban/antigravity-skills
+```
+*Scans the repository, opens an interactive selector for all 160+ skills, and lets you choose which AI agent(s) (Claude Code, Cursor, Gemini, Copilot) to target.*
+
+### 2. Global Installation (Available across all projects on your machine)
+```bash
+npx skills add ikonicity-airban/antigravity-skills -g
+```
+
+### 3. Install a Specific Skill Directly
+```bash
+npx skills add ikonicity-airban/antigravity-skills --skill threejs-3d-webgl
+npx skills add ikonicity-airban/antigravity-skills --skill faceless-youtube-creator
+npx skills add ikonicity-airban/antigravity-skills --skill agentic-workflows
+npx skills add ikonicity-airban/antigravity-skills --skill scroll-craft
+```
 
 ---
 

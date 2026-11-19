@@ -1,0 +1,8 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "name": "antigravity-skills",
+  "description": "Comprehensive library of 160+ skills and plugins for AI coding agents (Antigravity, Claude Code, Cursor, Copilot)",
+  "paths": [
+    "./skills"
+  ]
+}
