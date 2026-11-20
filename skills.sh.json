@@ -1,8 +1,852 @@
 {
-  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "version": "1.0.0",
   "name": "antigravity-skills",
-  "description": "Comprehensive library of 160+ skills and plugins for AI coding agents (Antigravity, Claude Code, Cursor, Copilot)",
-  "paths": [
-    "./skills"
+  "count": 169,
+  "skills": [
+    {
+      "name": "access-protected-vercel-deployment",
+      "description": "Access and test Vercel deployments protected by Vercel Authentication, SSO, or Deployment Protection. Use when curl, agent-browser, Playwright, or another automated request reaches a Vercel login or protection page; when a protected preview or production URL returns 401 or 403; when TRUSTED_SOURCES_ENVIRONMENT_MISMATCH appears; or when choosing between `vercel curl` and the `x-vercel-trusted-oidc-idp-token` header.",
+      "path": "skills/access-protected-vercel-deployment/SKILL.md"
+    },
+    {
+      "name": "accessibility-compliance",
+      "description": "Implement WCAG 2.2 compliant interfaces with mobile accessibility, inclusive design patterns, and assistive technology support. Use when auditing accessibility, implementing ARIA patterns, building for screen readers, or ensuring inclusive user experiences.",
+      "path": "skills/accessibility-compliance/SKILL.md"
+    },
+    {
+      "name": "aceternity-ui",
+      "description": "Build high-impact animated React/Next.js interfaces, 3D cards, beam effects, and spotlights with Aceternity UI, Tailwind CSS, and Motion (Framer Motion). Use when designing interactive landing pages, heroes, feature grids, or eye-catching micro-interactions.",
+      "path": "skills/aceternity-ui/SKILL.md"
+    },
+    {
+      "name": "agentic-workflows",
+      "description": "Architect durable, autonomous AI agents and multi-agent workflows using tool calling, structured outputs (Zod), prompt chaining, and evaluation loops. Use when designing LLM agents, chatbot backends, or autonomous pipelines.",
+      "path": "skills/agentic-workflows/SKILL.md"
+    },
+    {
+      "name": "ai-gateway",
+      "description": "Vercel AI Gateway guidance for setup, model discovery, authentication, routing, fallbacks, virtual models, evaluation models, BYOK, budgets, spend reporting, observability, compatible APIs, and coding-agent configuration. Use when adding AI Gateway to an app, migrating provider calls, choosing models or providers, centralizing model configuration, evaluating application state, debugging gateway requests, or running `vercel ai-gateway` commands.",
+      "path": "skills/ai-gateway/SKILL.md"
+    },
+    {
+      "name": "ai-sdk",
+      "description": "Vercel AI SDK expert guidance. Use when building AI-powered features — chat interfaces, text generation, structured output, tool calling, agents, MCP integration, streaming, embeddings, reranking, image generation, or working with any LLM provider.",
+      "path": "skills/ai-sdk/SKILL.md"
+    },
+    {
+      "name": "architect",
+      "description": "\"Run /architect when choosing between approaches, designing a feature or page, picking a tech stack, or when /develop says a decision is owed, anytime a load bearing technical decision is unmade. Asks deep questions, recommends an answer, and writes a build spec to docs/specs/. Owns all spec files.\"",
+      "path": "skills/architect/SKILL.md"
+    },
+    {
+      "name": "ask-matt",
+      "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "path": "skills/ask-matt/SKILL.md"
+    },
+    {
+      "name": "audit",
+      "description": "\"Run /audit on a greenfield project, an existing codebase with missing docs, or one area (/audit src/auth) to bootstrap the project's AI context, the AGENTS.md files every later skill reads. Writes tool agnostic AGENTS.md plus thin CLAUDE.md pointers, adding only what is missing; never overwrites curated content.\"",
+      "path": "skills/audit/SKILL.md"
+    },
+    {
+      "name": "auth",
+      "description": "Authentication integration guidance — Clerk (native Vercel Marketplace), Better Auth, Descope, and Auth0 setup for Next.js applications, plus Sign in with Vercel, Vercel Passport, and Vercel KMS. Covers server config, route handlers, proxy.ts auth patterns, sign-in/sign-up flows, and Marketplace provisioning. Use when implementing user authentication, sessions, protected routes, or protecting deployments.",
+      "path": "skills/auth/SKILL.md"
+    },
+    {
+      "name": "automation-scripting",
+      "description": "Create headless web scrapers, automated scheduled tasks, data ingestion pipelines, and webhook responders using Playwright, Python, and Node.js.",
+      "path": "skills/automation-scripting/SKILL.md"
+    },
+    {
+      "name": "baseline-ui",
+      "description": "Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass.",
+      "path": "skills/baseline-ui/SKILL.md"
+    },
+    {
+      "name": "bash-powershell-scripting",
+      "description": "Write robust, defensive shell scripts in Bash and PowerShell with proper error trapping, arguments parsing, and cross-platform compatibility.",
+      "path": "skills/bash-powershell-scripting/SKILL.md"
+    },
+    {
+      "name": "before-and-after",
+      "description": "Add existing screenshots or screen recordings to a GitHub pull request as a before/after or preview block. Use when a PR needs visual media attached to its description. Browser navigation and capture belong to agent-browser.",
+      "path": "skills/before-and-after/SKILL.md"
+    },
+    {
+      "name": "best-practices",
+      "description": "Tells your agent what Mobbin can and can't do and how the Mobbin skills work together, so it picks the right one or says when Mobbin isn't the right tool. Read it first, before any other Mobbin skill or tools, when the user asks about Mobbin or its connection, or starts a design task Mobbin could help with, including one that's too big or outside what Mobbin does.",
+      "path": "skills/best-practices/SKILL.md"
+    },
+    {
+      "name": "bootstrap",
+      "description": "Project bootstrapping orchestrator for repos that depend on Vercel-linked resources (databases, auth, and managed integrations). Use when setting up or repairing a repository so linking, environment provisioning, env pulls, and first-run db/dev commands happen in the correct safe order.",
+      "path": "skills/bootstrap/SKILL.md"
+    },
+    {
+      "name": "build-agents",
+      "description": "\"Default guidance for building AI agents. Use for generic requests to build, create, scaffold, design, architect, or implement an AI agent, agent app, tool-calling agent, durable agent, multi-agent system, or scheduled agent.\"",
+      "path": "skills/build-agents/SKILL.md"
+    },
+    {
+      "name": "cdn-caching",
+      "description": "Debug Vercel CDN caching — cache hit rate, stale content, revalidation behavior, ISR + PPR, per-request cache reasons (cacheReason) and PPR state (ppr_state), and costs.",
+      "path": "skills/cdn-caching/SKILL.md"
+    },
+    {
+      "name": "chat-sdk",
+      "description": "Vercel Chat SDK expert guidance. Use when building multi-platform chat bots — Slack, Telegram, Microsoft Teams, Discord, Google Chat, GitHub, Linear — with a single codebase. Covers the Chat class, adapters, threads, messages, cards, modals, streaming, state management, and webhook setup.",
+      "path": "skills/chat-sdk/SKILL.md"
+    },
+    {
+      "name": "check",
+      "description": "\"Confirm a change before merge. `/check verify` drives the real app to prove behavior against the spec (every acceptance criterion met, every surface built). `/check review` runs a senior code review on a fresh model, one that did not write the code. Verify after /develop, review before a PR. Writes to docs/reviews/, never edits code.\"",
+      "path": "skills/check/SKILL.md"
+    },
+    {
+      "name": "chief-of-staff",
+      "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+      "path": "skills/chief-of-staff/SKILL.md"
+    },
+    {
+      "name": "claude-handoff",
+      "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "path": "skills/claude-handoff/SKILL.md"
+    },
+    {
+      "name": "cli-tool-builder",
+      "description": "Build interactive, developer-friendly command-line tools using Node.js (Commander, Clack, Inquirer), Python (Click, Typer), or Rust (Clap).",
+      "path": "skills/cli-tool-builder/SKILL.md"
+    },
+    {
+      "name": "code-review",
+      "description": "\"Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\\"review since X\\\".\"",
+      "path": "skills/code-review/SKILL.md"
+    },
+    {
+      "name": "codebase-design",
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "path": "skills/codebase-design/SKILL.md"
+    },
+    {
+      "name": "coss-ui",
+      "description": "Implement, style, and compose accessible React UI components using the Coss UI (cosscom/ui) design system built on Base UI primitives and Tailwind CSS. Use when building clean, product-grade interfaces, particle components, forms, dialogs, and enterprise web applications.",
+      "path": "skills/coss-ui/SKILL.md"
+    },
+    {
+      "name": "create-a-backend",
+      "description": "Backend architecture guidance. Use when planning, building, or migrating an API or backend; choosing between Functions, Services, containers, Daemons, Workflow, Queues, and Marketplace databases; or selecting a supported backend framework or runtime.",
+      "path": "skills/create-a-backend/SKILL.md"
+    },
+    {
+      "name": "create-design-md",
+      "description": "Create or update a DESIGN.md from an existing product repository or public website. Use when asked to document an interface's design language, reconstruct its visual system, extract design tokens and guidance from current evidence, or give coding agents persistent UI context. Do not modify product source or promote accidental implementation patterns into design decisions.",
+      "path": "skills/create-design-md/SKILL.md"
+    },
+    {
+      "name": "custom-metrics",
+      "description": "Emit and query Vercel Custom Metrics. Use when instrumenting application or business measurements in Vercel Functions, using metric() from @vercel/functions, choosing metric names and attributes, or querying emitted values with vc metrics.",
+      "path": "skills/custom-metrics/SKILL.md"
+    },
+    {
+      "name": "daemons",
+      "description": "Vercel Daemons guidance — long-running background workers built from a Dockerfile and declared under the `daemons` key in vercel.json. Use when running queue consumers, Celery/Sidekiq/BullMQ workers, workflow workers, or job runners next to an app on Vercel; configuring daemon instances per region, memory, or command; handling SIGTERM; or choosing between Daemons, Functions, Queues, and Workflows.",
+      "path": "skills/daemons/SKILL.md"
+    },
+    {
+      "name": "dart-add-unit-test",
+      "description": "Write and organize unit tests for functions, methods, and classes using `package:test`. Use when creating new logic or fixing bugs to ensure code remains correct and regression-free.",
+      "path": "skills/dart-add-unit-test/SKILL.md"
+    },
+    {
+      "name": "dart-build-cli-app",
+      "description": ">-",
+      "path": "skills/dart-build-cli-app/SKILL.md"
+    },
+    {
+      "name": "dart-collect-coverage",
+      "description": "Collect coverage using the coverage packge and create an LCOV report",
+      "path": "skills/dart-collect-coverage/SKILL.md"
+    },
+    {
+      "name": "dart-fix-runtime-errors",
+      "description": "Uses get_runtime_errors and lsp to fetch an active stack trace, locate the failing line, apply a fix, and verify resolution via hot_reload.",
+      "path": "skills/dart-fix-runtime-errors/SKILL.md"
+    },
+    {
+      "name": "dart-generate-test-mocks",
+      "description": "Define and generate mock objects for external dependencies using `package:mockito` and `build_runner`. Use when unit testing classes that depend on complex external services like APIs or databases.",
+      "path": "skills/dart-generate-test-mocks/SKILL.md"
+    },
+    {
+      "name": "dart-migrate-to-checks-package",
+      "description": "|-",
+      "path": "skills/dart-migrate-to-checks-package/SKILL.md"
+    },
+    {
+      "name": "dart-resolve-package-conflicts",
+      "description": "Workflow for fixing package version conflicts. Use this when `pub get` fails due to incompatible package versions.",
+      "path": "skills/dart-resolve-package-conflicts/SKILL.md"
+    },
+    {
+      "name": "dart-run-static-analysis",
+      "description": "Execute `dart analyze` to identify warnings and errors, and use `dart fix --apply` to automatically resolve mechanical lint issues. Use during development to ensure code quality and before committing changes.",
+      "path": "skills/dart-run-static-analysis/SKILL.md"
+    },
+    {
+      "name": "dart-setup-ffi-assets",
+      "description": "\"Guides agents in compiling and packaging C/C++ source code into dynamic or static libraries (Code Assets) using Dart's Native Assets hook system (via hook/build.dart and hook/link.dart utilizing package:hooks and package:native_toolchain_c). Use when a user asks to: 'setup native assets', 'compile C/C++ source code', 'bundle dynamic libraries', 'build native C code', 'link native assets', 'implement build.dart or link.dart hooks', or 'integrate C/C++ interop in Dart/Flutter'. Helps agents avoid manual toolchain orchestration and configures secure hash-validated binary downloads or advanced linker tree-shaking with package:record_use mapping.\"",
+      "path": "skills/dart-setup-ffi-assets/SKILL.md"
+    },
+    {
+      "name": "dart-use-doc-examples",
+      "description": "\"How to inject external code examples into Dartdoc using the {@example} directive, and how to filter those files using #hide, #region, and #endregion tags.\"",
+      "path": "skills/dart-use-doc-examples/SKILL.md"
+    },
+    {
+      "name": "dart-use-ffigen",
+      "description": "Guide agents to use `package:ffigen` to automatically generate FFI bindings instead of writing them manually. Use this skill when a task involves writing new FFI bindings, extending C/Objective-C/Swift integrations, or replacing hand-crafted `dart:ffi` setups.",
+      "path": "skills/dart-use-ffigen/SKILL.md"
+    },
+    {
+      "name": "dart-use-path-package",
+      "description": ">-",
+      "path": "skills/dart-use-path-package/SKILL.md"
+    },
+    {
+      "name": "dart-use-pattern-matching",
+      "description": ">-",
+      "path": "skills/dart-use-pattern-matching/SKILL.md"
+    },
+    {
+      "name": "dart-use-primary-constructors",
+      "description": ">",
+      "path": "skills/dart-use-primary-constructors/SKILL.md"
+    },
+    {
+      "name": "dart-write-documentation",
+      "description": "\"Rules and formatting guidelines for writing Dart /// API documentation and doc comments. Use when documenting Dart code, writing doc comments for any Dart declaration (libraries, classes, methods, variables, etc.), or when instructed to follow the Effective Dart documentation guidelines.\"",
+      "path": "skills/dart-write-documentation/SKILL.md"
+    },
+    {
+      "name": "debug",
+      "description": "\"Run /debug to find and fix a bug's root cause: a test failing for an unclear reason, /check verify finding a failure, or behavior being wrong. Runs a reproduce, localize, hypothesize, test, fix, verify loop, makes the minimal fix, and hands a regression test to /test. No features, no extra refactors.\"",
+      "path": "skills/debug/SKILL.md"
+    },
+    {
+      "name": "deep-research-analyst",
+      "description": "Autonomous multi-source technical and market research system. Formulates query vectors, audits primary sources (docs, RFCs, code, whitepapers), cross-examines contradictory claims, and synthesizes exhaustive, cite-backed intelligence reports.",
+      "path": "skills/deep-research-analyst/SKILL.md"
+    },
+    {
+      "name": "deployments-cicd",
+      "description": "Vercel deployment and CI/CD expert guidance. Use when deploying, promoting, rolling back, inspecting deployments, building with --prebuilt, or configuring CI workflow files for Vercel.",
+      "path": "skills/deployments-cicd/SKILL.md"
+    },
+    {
+      "name": "design-system-patterns",
+      "description": "Build scalable design systems with design tokens, theming infrastructure, and component architecture patterns. Use when creating design tokens, implementing theme switching, building component libraries, or establishing design system foundations.",
+      "path": "skills/design-system-patterns/SKILL.md"
+    },
+    {
+      "name": "develop",
+      "description": "\"Run /develop to build a feature, UI or backend, from an approved design, a page, component, API, service, or data slice. If something load bearing is undecided and no spec records it, it stops and routes you to /architect; otherwise it reads the spec plus AGENTS.md, builds, and advances the scope.\"",
+      "path": "skills/develop/SKILL.md"
+    },
+    {
+      "name": "diagnosing-bugs",
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "path": "skills/diagnosing-bugs/SKILL.md"
+    },
+    {
+      "name": "document",
+      "description": "\"Run /document `pr` | `changelog` | `release-note` | `postmortem` (or let it ask) to write the human facing prose about a change. Drafts from the real commits and diff, writing to the right place. Does not write code, tests, or specs.\"",
+      "path": "skills/document/SKILL.md"
+    },
+    {
+      "name": "domain-modeling",
+      "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+      "path": "skills/domain-modeling/SKILL.md"
+    },
+    {
+      "name": "domains",
+      "description": "Search, register, connect, transfer, and renew domain names on Vercel using the CLI or Domains Registrar API. Use for domain availability and pricing, custom domains, DNS records, nameservers, ownership verification, and domain orders.",
+      "path": "skills/domains/SKILL.md"
+    },
+    {
+      "name": "ebook-creator",
+      "description": "Comprehensive framework for drafting, formatting, compiling, and publishing professional non-fiction and technical eBooks to EPUB, PDF, and Kindle KDP formats using Markdown, Pandoc, and Typst.",
+      "path": "skills/ebook-creator/SKILL.md"
+    },
+    {
+      "name": "egm-bootstrap",
+      "description": "Bootstrap directory README.md files across a repository subtree.",
+      "path": "skills/egm-bootstrap/SKILL.md"
+    },
+    {
+      "name": "egm-brainstorm",
+      "description": ">-",
+      "path": "skills/egm-brainstorm/SKILL.md"
+    },
+    {
+      "name": "egm-draft",
+      "description": ">-",
+      "path": "skills/egm-draft/SKILL.md"
+    },
+    {
+      "name": "egm-drift-report",
+      "description": ">-",
+      "path": "skills/egm-drift-report/SKILL.md"
+    },
+    {
+      "name": "egm-resolve",
+      "description": ">-",
+      "path": "skills/egm-resolve/SKILL.md"
+    },
+    {
+      "name": "egm-review",
+      "description": ">-",
+      "path": "skills/egm-review/SKILL.md"
+    },
+    {
+      "name": "egm-review-loop",
+      "description": ">-",
+      "path": "skills/egm-review-loop/SKILL.md"
+    },
+    {
+      "name": "electron-desktop",
+      "description": "Build rich cross-platform desktop applications using Electron, Node.js, and Chromium. Use when configuring context isolation, secure IPC preload scripts, native menus, and auto-updaters.",
+      "path": "skills/electron-desktop/SKILL.md"
+    },
+    {
+      "name": "env-vars",
+      "description": "Vercel environment variable expert guidance. Use when working with .env files, vercel env commands, Secret or Config variable types, OIDC tokens, or managing environment-specific configuration.",
+      "path": "skills/env-vars/SKILL.md"
+    },
+    {
+      "name": "eve",
+      "description": "\"eve framework guidance for durable AI agents and agent-powered applications. Use when creating, editing, or debugging an eve project, when the user explicitly asks for eve, or when the build-agents skill has selected eve as the default framework. Covers eve's filesystem-first runtime, durable sessions, tools, skills, connections, channels, sandboxes, subagents, schedules, evals, frontend clients, and Agent Runs observability. Do not use for incidental agent mentions, generic agent-building prompts, or established non-eve stacks unless the user asks for comparison or migration.\"",
+      "path": "skills/eve/SKILL.md"
+    },
+    {
+      "name": "expo-mobile",
+      "description": "Architect and develop production cross-platform mobile apps with Expo and React Native. Use when implementing Expo Router, NativeWind (Tailwind), gesture handlers, Reanimated animations, or EAS workflows.",
+      "path": "skills/expo-mobile/SKILL.md"
+    },
+    {
+      "name": "faceless-youtube-creator",
+      "description": "End-to-end production system for faceless YouTube channels, including high-retention script engineering, AI voice pacing, Remotion and programmatic video generation, B-roll sourcing, and high-CTR thumbnail packaging.",
+      "path": "skills/faceless-youtube-creator/SKILL.md"
+    },
+    {
+      "name": "fixing-accessibility",
+      "description": "Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus management, color contrast, and form errors. Use when adding interactive controls, forms, dialogs, or reviewing WCAG compliance.",
+      "path": "skills/fixing-accessibility/SKILL.md"
+    },
+    {
+      "name": "fixing-motion-performance",
+      "description": "Audit and fix animation performance issues including layout thrashing, compositor properties, scroll-linked motion, and blur effects. Use when animations stutter, transitions jank, or reviewing CSS/JS animation performance.",
+      "path": "skills/fixing-motion-performance/SKILL.md"
+    },
+    {
+      "name": "flags-sdk",
+      "description": "\"Implement feature flags in Next.js or SvelteKit code with the Flags SDK (`flags` npm package). Use when installing or configuring the SDK, declaring flags with `flag()`, reading a connected same-team project's flags through Project Connections (`createVercelAdapter({ projectId })`), wiring a provider adapter (`@flags-sdk/vercel`, Statsig, LaunchDarkly, PostHog, GrowthBook, Global Config, OpenFeature, and others), using `identify`, `dedupe`, or `evaluate`, keeping pages static with precompute, setting up Flags Explorer, or encrypting flag values. For planning a flag, Vercel Flags rollouts and experiments, the `vercel flags` CLI, or other frameworks, use the `vercel-flags` skill.\"",
+      "path": "skills/flags-sdk/SKILL.md"
+    },
+    {
+      "name": "flutter-add-integration-test",
+      "description": "Configures Flutter Driver for app interaction and converts MCP actions into permanent integration tests. Use when adding integration testing to a project, exploring UI components via MCP, or automating user flows with the integration_test package.",
+      "path": "skills/flutter-add-integration-test/SKILL.md"
+    },
+    {
+      "name": "flutter-add-widget-preview",
+      "description": "Adds interactive widget previews to the project using the previews.dart system. Use when creating new UI components or updating existing screens to ensure consistent design and interactive testing.",
+      "path": "skills/flutter-add-widget-preview/SKILL.md"
+    },
+    {
+      "name": "flutter-add-widget-test",
+      "description": "Implement a component-level test using `WidgetTester` to verify UI rendering and user interactions (tapping, scrolling, entering text). Use when validating that a specific widget displays correct data and responds to events as expected.",
+      "path": "skills/flutter-add-widget-test/SKILL.md"
+    },
+    {
+      "name": "flutter-apply-architecture-best-practices",
+      "description": "Architects a Flutter application using the recommended layered approach (UI, Logic, Data). Use when structuring a new project or refactoring for scalability.",
+      "path": "skills/flutter-apply-architecture-best-practices/SKILL.md"
+    },
+    {
+      "name": "flutter-apps",
+      "description": "Build natively compiled mobile, desktop, and web applications using Google Flutter and Dart. Use when creating Flutter widget hierarchies, Riverpod state management, custom painters, and cross-platform layouts.",
+      "path": "skills/flutter-apps/SKILL.md"
+    },
+    {
+      "name": "flutter-build-responsive-layout",
+      "description": "Use `LayoutBuilder`, `MediaQuery`, or `Expanded/Flexible` to create a layout that adapts to different screen sizes. Use when you need the UI to look good on both mobile and tablet/desktop form factors.",
+      "path": "skills/flutter-build-responsive-layout/SKILL.md"
+    },
+    {
+      "name": "flutter-fix-layout-issues",
+      "description": "Fixes Flutter layout errors (overflows, unbounded constraints) using Dart and Flutter MCP tools. Use when addressing \"RenderFlex overflowed\", \"Vertical viewport was given unbounded height\", or similar layout issues.",
+      "path": "skills/flutter-fix-layout-issues/SKILL.md"
+    },
+    {
+      "name": "flutter-implement-json-serialization",
+      "description": "Create model classes with `fromJson` and `toJson` methods using `dart:convert`. Use when manually mapping JSON keys to class properties for simple data structures.",
+      "path": "skills/flutter-implement-json-serialization/SKILL.md"
+    },
+    {
+      "name": "flutter-setup-declarative-routing",
+      "description": "Configure `MaterialApp.router` using a package like `go_router` for advanced URL-based navigation. Use when developing web applications or mobile apps that require specific deep linking and browser history support.",
+      "path": "skills/flutter-setup-declarative-routing/SKILL.md"
+    },
+    {
+      "name": "flutter-setup-localization",
+      "description": "Add `flutter_localizations` and `intl` dependencies, enable \"generate true\" in `pubspec.yaml`, and create an `l10n.yaml` configuration file. Use when initializing localization support for a new Flutter project.",
+      "path": "skills/flutter-setup-localization/SKILL.md"
+    },
+    {
+      "name": "flutter-use-http-package",
+      "description": "Use the `http` package to execute GET, POST, PUT, or DELETE requests. Use when you need to fetch from or send data to a REST API.",
+      "path": "skills/flutter-use-http-package/SKILL.md"
+    },
+    {
+      "name": "godot-engine",
+      "description": "Design and develop 2D and 3D games in Godot Engine using GDScript. Use when implementing character controllers, node hierarchies, signals, physics systems, and state machines.",
+      "path": "skills/godot-engine/SKILL.md"
+    },
+    {
+      "name": "grill-interactive",
+      "description": "Relentlessly interview and stress-test the user's plan, architecture, or idea using native interactive multi-choice option menus (via the ask_question tool) instead of plain-text questionnaires. Use whenever the user asks to grill, stress-test, or align on a plan interactively.",
+      "path": "skills/grill-interactive/SKILL.md"
+    },
+    {
+      "name": "grill-me",
+      "description": "A relentless, interactive option-menu interview to sharpen and stress-test a plan or design.",
+      "path": "skills/grill-me/SKILL.md"
+    },
+    {
+      "name": "grill-with-docs",
+      "description": "Relentlessly interview and stress-test a plan or design using interactive option menus (via the ask_question tool) while automatically capturing Architecture Decision Records (ADRs) and a domain GLOSSARY.md as decisions crystallize.",
+      "path": "skills/grill-with-docs/SKILL.md"
+    },
+    {
+      "name": "grilling",
+      "description": "Grill the user relentlessly about a plan, decision, or idea using an interactive option menu. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "path": "skills/grilling/SKILL.md"
+    },
+    {
+      "name": "handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "path": "skills/handoff/SKILL.md"
+    },
+    {
+      "name": "icon-design-systems",
+      "description": "Design, architect, and optimize pixel-perfect SVG icon systems aligned to 16/24/32px grids. Use when building custom icon libraries, SVGO optimization passes, or accessible React icon wrappers.",
+      "path": "skills/icon-design-systems/SKILL.md"
+    },
+    {
+      "name": "implement",
+      "description": "\"Implement a piece of work based on a spec or set of tickets.\"",
+      "path": "skills/implement/SKILL.md"
+    },
+    {
+      "name": "implement-spec",
+      "description": "\"Implement the result of /to-spec and /to-tickets in code.\"",
+      "path": "skills/implement-spec/SKILL.md"
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "path": "skills/improve-codebase-architecture/SKILL.md"
+    },
+    {
+      "name": "improve-ui",
+      "description": "Audit an existing product surface against its own design evidence, identify verified UI problems, and write self-contained implementation plans for another agent. Strictly read-only on product source. Use when asked to review, refine, improve, or clean up an interface without replacing its identity; investigate design-system drift; or prepare a design handoff.",
+      "path": "skills/improve-ui/SKILL.md"
+    },
+    {
+      "name": "interaction-design",
+      "description": "Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish to UI interactions, implementing loading states, or creating delightful user experiences.",
+      "path": "skills/interaction-design/SKILL.md"
+    },
+    {
+      "name": "is-agentic",
+      "description": "Score how ready a website, domain, or public MCP endpoint is for AI agents using Is Agentic, and read or act on the resulting report. Use when asked to check a site's agent readiness, get its Is Agentic score, fetch a scored report as JSON, or fix the issues that lower a site's score.",
+      "path": "skills/is-agentic/SKILL.md"
+    },
+    {
+      "name": "knowledge-update",
+      "description": "Corrects outdated LLM knowledge about the Vercel platform and introduces new products. Injected at session start.",
+      "path": "skills/knowledge-update/SKILL.md"
+    },
+    {
+      "name": "loop-me",
+      "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "path": "skills/loop-me/SKILL.md"
+    },
+    {
+      "name": "magic-ui",
+      "description": "Build delightful animated landing pages and micro-interactions using Magic UI components, Tailwind CSS, and Motion. Use when implementing animated bento grids, marquees, particle globes, shimmer buttons, and border beams.",
+      "path": "skills/magic-ui/SKILL.md"
+    },
+    {
+      "name": "marketplace",
+      "description": "Vercel Marketplace expert guidance — discovering, installing, and managing third-party integrations via the `vercel integration` CLI. Use when building any app that needs an external capability without a dedicated skill — commerce (stores, storefronts, selling products), payments (checkout, subscriptions, billing), observability/monitoring, messaging/email, search, or CMS — or when discovering, installing, or managing integrations.",
+      "path": "skills/marketplace/SKILL.md"
+    },
+    {
+      "name": "micro-animations",
+      "description": "Design and implement tactile, purpose-driven micro-interactions, spring physics, button feedback, hover effects, and interactive feedback using Motion (Framer Motion) and Tailwind CSS.",
+      "path": "skills/micro-animations/SKILL.md"
+    },
+    {
+      "name": "microfrontends",
+      "description": "Guide for building, configuring, and deploying microfrontends on Vercel. Use this skill when the user mentions microfrontends, multi-zones, splitting an app across teams, independent deployments, cross-app routing, incremental migration, composing multiple frontends under one domain, microfrontends.json, @vercel/microfrontends, the microfrontends local proxy, or path-based routing between Vercel projects. Also use when the user asks about shared layouts across projects, navigation between microfrontends, fallback environments, asset prefixes, or feature flag controlled routing.",
+      "path": "skills/microfrontends/SKILL.md"
+    },
+    {
+      "name": "mobile-android-design",
+      "description": "Master Material Design 3 and Jetpack Compose patterns for building native Android apps. Use when designing Android interfaces, implementing Compose UI, or following Google's Material Design guidelines.",
+      "path": "skills/mobile-android-design/SKILL.md"
+    },
+    {
+      "name": "mobile-ios-design",
+      "description": "Master iOS Human Interface Guidelines and SwiftUI patterns for building native iOS apps. Use when designing iOS interfaces, implementing SwiftUI views, or ensuring apps follow Apple's design principles.",
+      "path": "skills/mobile-ios-design/SKILL.md"
+    },
+    {
+      "name": "offload-to-sandbox",
+      "description": "Offload heavy builds, full test suites and parallel experiments from the local machine to Vercel Sandboxes with the `vercel sandbox` CLI. Use when a local machine is overloaded or shared by several agents, when a test suite should be sharded, or when many tasks should run side by side without consuming local CPU, memory or disk.",
+      "path": "skills/offload-to-sandbox/SKILL.md"
+    },
+    {
+      "name": "photo-editing-automation",
+      "description": "Automate photo editing, background removal, smart cropping, color grading, and format optimization using Sharp, rembg, Canvas, and ImageMagick.",
+      "path": "skills/photo-editing-automation/SKILL.md"
+    },
+    {
+      "name": "plain-writing",
+      "description": "Makes every report a Mobbin skill writes read like a person wrote it, in plain interface terms. Use only when a Mobbin skill writes prose for the user or asks for this skill by name; not for writing outside Mobbin skills. Removes the tells of AI-generated writing (em dashes, puffery, design buzzwords, rule-of-three, sign-offs) without changing a fact or adding one.",
+      "path": "skills/plain-writing/SKILL.md"
+    },
+    {
+      "name": "pr",
+      "description": "\"Use when writing a PR body.\"",
+      "path": "skills/pr/SKILL.md"
+    },
+    {
+      "name": "prototype",
+      "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "path": "skills/prototype/SKILL.md"
+    },
+    {
+      "name": "queues",
+      "description": "Vercel Queues guidance — durable topics with at-least-once delivery, independent consumer groups, retries, delays, and idempotency keys via @vercel/queue (JS) or vercel-queue (Python). Use when deferring background work, buffering traffic, fanning out events, or choosing between Queues and Workflows.",
+      "path": "skills/queues/SKILL.md"
+    },
+    {
+      "name": "rag-vector-search",
+      "description": "Implement Retrieval-Augmented Generation (RAG) systems with smart chunking, dense vector embeddings, hybrid search (BM25 + vector), and reranking. Use when building question-answering systems or knowledge-base search.",
+      "path": "skills/rag-vector-search/SKILL.md"
+    },
+    {
+      "name": "react-best-practices",
+      "description": "Vercel's React and Next.js performance rules (70 rules in 8 categories ordered by impact - eliminating waterfalls, bundle size, server-side performance, client-side data fetching, re-renders, rendering performance, JavaScript performance, and advanced patterns). Use when writing, reviewing, or refactoring React components, Next.js pages, or data fetching for performance. Not an accessibility or TypeScript style guide.",
+      "path": "skills/react-best-practices/SKILL.md"
+    },
+    {
+      "name": "react-native-design",
+      "description": "Master React Native styling, navigation, and Reanimated animations for cross-platform mobile development. Use when building React Native apps, implementing navigation patterns, or creating performant animations.",
+      "path": "skills/react-native-design/SKILL.md"
+    },
+    {
+      "name": "redesign-screen",
+      "description": "Redesign any screen from patterns real apps ship. Share a screenshot, your code or a design file, and the skill finds how apps on Mobbin handle the same screen. Explore a few directions or fix specific problems, and see the evidence behind each change. You get a before and after image and a short report. The redesign stays in your own design system, and anything that already works is kept. Use whenever the user points at a screen, section, or component they have, or at a reference, a Mobbin result, one or more Mobbin collections or the screens they saved, and asks to redesign, improve, restyle, or rebuild it, or to see a few directions for it.",
+      "path": "skills/redesign-screen/SKILL.md"
+    },
+    {
+      "name": "research",
+      "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "path": "skills/research/SKILL.md"
+    },
+    {
+      "name": "responsive-design",
+      "description": "Implement modern responsive layouts using container queries, fluid typography, CSS Grid, and mobile-first breakpoint strategies. Use when building adaptive interfaces, implementing fluid layouts, or creating component-level responsive behavior.",
+      "path": "skills/responsive-design/SKILL.md"
+    },
+    {
+      "name": "retro",
+      "description": "\"Conduct a retrospective on a coding session.\"",
+      "path": "skills/retro/SKILL.md"
+    },
+    {
+      "name": "routing-middleware",
+      "description": "Vercel Routing Middleware guidance — request interception before cache, rewrites, redirects, personalization. Works with any framework. Supports Edge, Node.js, Bun, and Python runtimes. Use when intercepting requests at the platform level.",
+      "path": "skills/routing-middleware/SKILL.md"
+    },
+    {
+      "name": "runtime-cache",
+      "description": "Vercel Runtime Cache API guidance — ephemeral per-region key-value cache with tag-based invalidation. Shared across Functions, Routing Middleware, and Builds. Use when implementing caching strategies beyond framework-level caching.",
+      "path": "skills/runtime-cache/SKILL.md"
+    },
+    {
+      "name": "scope",
+      "description": "\"Run /scope to turn a product idea into a living, coarse scope in docs/scope/ and keep it current: plan a new product, plan the next slice, enroll one named feature, or run with no argument to reconcile after shipping and queue what is next. Seeds WHAT to build; /architect designs, /develop builds.\"",
+      "path": "skills/scope/SKILL.md"
+    },
+    {
+      "name": "scroll-craft",
+      "description": ">",
+      "path": "skills/scroll-craft/SKILL.md"
+    },
+    {
+      "name": "scroll-parallax-effects",
+      "description": "Implement smooth momentum scrolling, scroll-linked animations, parallax depth layers, section pinning, and scrubbed timelines using Lenis, GSAP ScrollTrigger, Motion (Framer Motion), and native CSS scroll-driven animations.",
+      "path": "skills/scroll-parallax-effects/SKILL.md"
+    },
+    {
+      "name": "search",
+      "description": "Gets better results from every Mobbin search, so the references match what you're working on. Use before every call to search_screens, search_flows or search_sections. Covers the tool, writing an effective query, the mode, pulling more results, and what to do when a search falls short.",
+      "path": "skills/search/SKILL.md"
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "description": "\"Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.\"",
+      "path": "skills/setup-matt-pocock-skills/SKILL.md"
+    },
+    {
+      "name": "setup-ts-deep-modules",
+      "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+      "path": "skills/setup-ts-deep-modules/SKILL.md"
+    },
+    {
+      "name": "shadcn-ui",
+      "description": "Architect, install, and customize production-grade components using shadcn/ui, Radix UI primitives, Tailwind CSS, and Lucide icons. Use when building clean component libraries, enterprise design systems, forms, dialogs, and data tables.",
+      "path": "skills/shadcn-ui/SKILL.md"
+    },
+    {
+      "name": "smooth-transitions",
+      "description": "Implement seamless page transitions, shared element transitions, layout morphing, and DOM mount/unmount animations using the View Transitions API, Motion (Framer Motion) layoutId, and modern CSS @starting-style.",
+      "path": "skills/smooth-transitions/SKILL.md"
+    },
+    {
+      "name": "software-factory",
+      "description": "Shared language for designing a software factory: the tasks it runs and the services it plugs into.",
+      "path": "skills/software-factory/SKILL.md"
+    },
+    {
+      "name": "solana-anchor-rust",
+      "description": "Develop secure Solana on-chain programs using Rust and the Anchor framework. Use when writing Solana programs, PDA derivation, account validation, CPI calls, or building TypeScript client tests.",
+      "path": "skills/solana-anchor-rust/SKILL.md"
+    },
+    {
+      "name": "solidity-hardhat",
+      "description": "Author, test, and deploy production-grade Ethereum/EVM smart contracts using Solidity, Hardhat, and OpenZeppelin. Use when writing smart contracts, auditing vulnerabilities, running Hardhat tests, or managing gas optimization.",
+      "path": "skills/solidity-hardhat/SKILL.md"
+    },
+    {
+      "name": "supabase",
+      "description": "\"Use when doing ANY task involving Supabase. Triggers: Supabase products (Database, Auth, Edge Functions, Realtime, Storage, Vectors, Cron, Queues); client libraries and SSR integrations (supabase-js, @supabase/ssr) in Next.js, React, SvelteKit, Astro, Remix; auth issues (login, logout, sessions, JWT, cookies, getSession, getUser, getClaims, RLS); Supabase CLI or MCP server; schema changes, migrations, declarative schemas, security audits, Postgres extensions (pg_graphql, pg_cron, pg_vector); debugging and troubleshooting errors or unexpected behavior on Supabase projects (HTTP errors, Postgres errors, RLS surprises, permission denied, schema cache issues, timeouts, Edge Function crashes, Realtime drops, Storage failures) and reading or querying logs (Logs Explorer, ClickHouse).\"",
+      "path": "skills/supabase/SKILL.md"
+    },
+    {
+      "name": "supabase-postgres-best-practices",
+      "description": "\"Postgres best practices maintained by Supabase, for Postgres running anywhere. Load this skill BEFORE writing or changing anything that lives in a Postgres database: creating or altering tables and columns (including choosing column types), schema design, migrations and declarative schema files, RLS policies and the tests that verify them, indexes, triggers, database functions, queues and scheduled jobs (pg_cron, pgmq), vector/semantic search (pgvector), and restoring dumps (pg_restore) or importing data. Also load it when diagnosing slow queries, high CPU, timeouts, EXPLAIN plans, connection exhaustion, locking, bloat, or rows visible to the wrong user or tenant. This is not just a performance guide — schema, migration, security, and SQL authoring tasks need these rules too, even for a one-column change or a single query.\"",
+      "path": "skills/supabase-postgres-best-practices/SKILL.md"
+    },
+    {
+      "name": "svg-animation-craft",
+      "description": "Create scalable SVG graphics, kinetic path-drawing animations, SMIL, CSS keyframe morphs, and GSAP vector sequences. Use when building animated logos, illustrated graphics, or interactive vector UI.",
+      "path": "skills/svg-animation-craft/SKILL.md"
+    },
+    {
+      "name": "sync",
+      "description": "\"Run /sync as the last step after a change is complete, around merge, to keep durable knowledge current. Updates root and nested AGENTS.md, reconciles the scope from repo evidence, and flags specs the change made stale. Surgical edits only: it adds lines, and rewrites single lines it owns. Never a whole section, never curated prose.\"",
+      "path": "skills/sync/SKILL.md"
+    },
+    {
+      "name": "tailwind-core",
+      "description": "Core Tailwind CSS v4 & v3 runbook for component styling, utility-first layouts, responsive design, dark mode, animations, and clean class composition. Use whenever writing, styling, or refactoring UI components with Tailwind CSS.",
+      "path": "skills/tailwind-core/SKILL.md"
+    },
+    {
+      "name": "tailwind-design-system",
+      "description": "Build scalable design systems with Tailwind CSS v4, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implementing design systems, or standardizing UI patterns.",
+      "path": "skills/tailwind-design-system/SKILL.md"
+    },
+    {
+      "name": "tauri-desktop",
+      "description": "Build secure, ultra-lightweight desktop applications using Tauri and Rust with web frontends (React, Vue, Svelte). Use when writing Tauri commands, configuring IPC, or packaging desktop binaries.",
+      "path": "skills/tauri-desktop/SKILL.md"
+    },
+    {
+      "name": "tdd",
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "path": "skills/tdd/SKILL.md"
+    },
+    {
+      "name": "teach",
+      "description": "Teach the user a new skill or concept, within this workspace.",
+      "path": "skills/teach/SKILL.md"
+    },
+    {
+      "name": "test",
+      "description": "\"Run /test to write a test suite for code you just built or changed, after implementing a feature, route, or fix. Targets uncommitted changes automatically, reads test preferences.json for your framework (asks and saves it if absent), and picks the right strategy per file: happy path, edge cases, error states, accessibility.\"",
+      "path": "skills/test/SKILL.md"
+    },
+    {
+      "name": "threejs-3d-webgl",
+      "description": "Architect, build, and optimize high-performance 3D web experiences, games, interactive scenes, and custom shaders using Three.js, React Three Fiber (R3F), Drei, Rapier physics, and WebGL/WebGPU.",
+      "path": "skills/threejs-3d-webgl/SKILL.md"
+    },
+    {
+      "name": "to-questionnaire",
+      "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "path": "skills/to-questionnaire/SKILL.md"
+    },
+    {
+      "name": "to-spec",
+      "description": "\"Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.\"",
+      "path": "skills/to-spec/SKILL.md"
+    },
+    {
+      "name": "to-tickets",
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "path": "skills/to-tickets/SKILL.md"
+    },
+    {
+      "name": "triage",
+      "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "path": "skills/triage/SKILL.md"
+    },
+    {
+      "name": "typography-mastery",
+      "description": "Architect production-grade typography systems with fluid scaling (clamp), modular scales, typographic rhythm, font pairing, OpenType features, text-balance, and web font performance optimization.",
+      "path": "skills/typography-mastery/SKILL.md"
+    },
+    {
+      "name": "vercel-agent",
+      "description": "Vercel Agent guidance — dashboard and Slack chat, code review, Security Review, production investigation, approved actions, and product installation. Use when configuring or working with Vercel's AI assistant.",
+      "path": "skills/vercel-agent/SKILL.md"
+    },
+    {
+      "name": "vercel-cli",
+      "description": "Vercel CLI expert guidance. Use when deploying, managing environment variables, linking projects, viewing logs, querying metrics, debugging a deployed app on Vercel (errors, 5xx responses, timeouts, slow routes, or a single failing request), managing domains, managing feature flags with vercel flags, reviewing security checks or Security Review vulnerabilities with vercel security, or interacting with the Vercel platform from the command line. Use the vercel-tracing skill instead for `vercel traces` span search, trace inspection, and sampling rules, or for OpenTelemetry setup.",
+      "path": "skills/vercel-cli/SKILL.md"
+    },
+    {
+      "name": "vercel-connect",
+      "description": "Vercel Connect expert guidance for securely obtaining scoped credentials for third-party services on behalf of apps or users. Use when wiring up provider API access, OAuth, API-key services, MCP servers, triggers, framework adapters, eve agent connections, or provider tokens for Passport-authenticated users.",
+      "path": "skills/vercel-connect/SKILL.md"
+    },
+    {
+      "name": "vercel-firewall",
+      "description": "Vercel Firewall expert guidance — automatic DDoS mitigation, the Vercel WAF (custom rules, IP blocking, managed rulesets, rate limiting), Attack Mode, system bypass, bot management, and the `vercel firewall` CLI. Use when configuring platform-level security, responding to attacks, or staging firewall rules.",
+      "path": "skills/vercel-firewall/SKILL.md"
+    },
+    {
+      "name": "vercel-flags",
+      "description": "\"Feature flags, A/B tests, and gradual rollouts with Vercel Flags, in any app or framework. Use whenever the user is planning, adding, changing, or cleaning up a feature flag, toggle, kill switch, experiment, percentage rollout, or targeting rule, or wants to gate or hide a feature for some users, even before a library or provider is chosen. Covers choosing an integration (Flags SDK, `@vercel/flags-core`, OpenFeature), the Vercel dashboard, the `vercel flags` CLI (create, inspect, set, split, rollout, rules, segments, evaluations, archive, connections), Project Connections, OIDC vs SDK keys, `FLAGS_SECRET`, and Flags Explorer overrides. For `flag()` declarations, adapters, precompute, and the Flags Explorer endpoint in Next.js or SvelteKit code, load the `flags-sdk` skill.\"",
+      "path": "skills/vercel-flags/SKILL.md"
+    },
+    {
+      "name": "vercel-functions",
+      "description": "Vercel Functions expert guidance — Node.js/Bun/Python runtimes, Fluid Compute, long-duration (30 min) functions, large functions (5 GB bundles), Docker/OCI container images, plan limits, streaming, WebSockets, and legacy Cron Jobs (new scheduled work belongs to vercel-schedules). Use when configuring, debugging, or optimizing server-side code running on Vercel.",
+      "path": "skills/vercel-functions/SKILL.md"
+    },
+    {
+      "name": "vercel-sandbox",
+      "description": "Vercel Sandbox guidance — ephemeral Firecracker microVMs for running untrusted code safely. Supports AI agents, code generation, and experimentation. Use when executing user-generated or AI-generated code in isolation.",
+      "path": "skills/vercel-sandbox/SKILL.md"
+    },
+    {
+      "name": "vercel-schedules",
+      "description": "Vercel Schedules guidance — run a private function, route, or Vercel Queues topic on a cron cadence or once at a set time. Covers static schedules in vercel.json, dynamic per-user schedules with @vercel/schedules, handleSchedule, the vercel schedules CLI, environments, jitter, and migrating from Cron Jobs. Use when adding scheduled or recurring work, one-time reminders, or replacing `crons`.",
+      "path": "skills/vercel-schedules/SKILL.md"
+    },
+    {
+      "name": "vercel-services",
+      "description": "Configure and troubleshoot Vercel Services for multiple frontends and backends in one project. Use when composing a polyglot or multi-service application on one Vercel deployment; defining the `services` key, service-targeted rewrites, or service bindings in `vercel.json`; or running all services with `vercel dev`.",
+      "path": "skills/vercel-services/SKILL.md"
+    },
+    {
+      "name": "vercel-storage",
+      "description": "Vercel storage expert guidance — Blob, Global Config (formerly Edge Config), and Marketplace storage (Neon Postgres, Upstash Redis). Use when choosing, configuring, or using data storage with Vercel applications.",
+      "path": "skills/vercel-storage/SKILL.md"
+    },
+    {
+      "name": "vercel-tracing",
+      "description": "Set up OpenTelemetry instrumentation for Vercel Tracing and query the resulting spans. Use when adding or fixing `@vercel/otel`, wiring a framework's server startup hook (Next.js, SvelteKit, and others), adding custom spans, turning on spans from libraries such as the AI SDK, Flags SDK, or database clients, propagating trace context between services, configuring always-on tracing sampling, searching or inspecting spans with `vercel traces`, or debugging failed or slow server requests.",
+      "path": "skills/vercel-tracing/SKILL.md"
+    },
+    {
+      "name": "verification",
+      "description": "\"Full-story verification — infers what the user is building, then verifies the complete flow end-to-end: browser → API → data → response. Triggers on dev server start and 'why isn't this working' signals.\"",
+      "path": "skills/verification/SKILL.md"
+    },
+    {
+      "name": "visual-design-foundations",
+      "description": "Apply typography, color theory, spacing systems, and iconography principles to create cohesive visual designs. Use when establishing design tokens, building style guides, or improving visual hierarchy and consistency.",
+      "path": "skills/visual-design-foundations/SKILL.md"
+    },
+    {
+      "name": "wait-what",
+      "description": "\"Stop. That last message did not land: re-pitch it.\"",
+      "path": "skills/wait-what/SKILL.md"
+    },
+    {
+      "name": "wayfinder",
+      "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "path": "skills/wayfinder/SKILL.md"
+    },
+    {
+      "name": "web-component-design",
+      "description": "Master React, Vue, and Svelte component patterns including CSS-in-JS, composition strategies, and reusable component architecture. Use when building UI component libraries, designing component APIs, or implementing frontend design systems.",
+      "path": "skills/web-component-design/SKILL.md"
+    },
+    {
+      "name": "web-scraping-intelligence",
+      "description": "Production web scraping and content extraction engine. Automates dynamic SPA rendering with Playwright, extracts clean readable Markdown, handles pagination and infinite scroll, and runs automated website change monitoring.",
+      "path": "skills/web-scraping-intelligence/SKILL.md"
+    },
+    {
+      "name": "web3-dapp-architecture",
+      "description": "Architect and integrate frontend Web3 dApps with multi-wallet connectors, Wagmi, Viem, and Solana Web3.js. Use when implementing wallet auth, smart contract hooks, transaction status tracking, and RPC management.",
+      "path": "skills/web3-dapp-architecture/SKILL.md"
+    },
+    {
+      "name": "webgl-threejs-canvas",
+      "description": "Develop interactive 3D web games, GLTF model viewers, particle systems, and canvas games using Three.js and WebGL.",
+      "path": "skills/webgl-threejs-canvas/SKILL.md"
+    },
+    {
+      "name": "wizard",
+      "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "path": "skills/wizard/SKILL.md"
+    },
+    {
+      "name": "workflow",
+      "description": "Vercel Workflow SDK expert guidance. Use when building durable workflows, long-running tasks, API routes or agents that need pause/resume, retries, step-based execution, or crash-safe orchestration with Vercel Workflow.",
+      "path": "skills/workflow/SKILL.md"
+    },
+    {
+      "name": "writing-beats",
+      "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "path": "skills/writing-beats/SKILL.md"
+    },
+    {
+      "name": "writing-for-agents",
+      "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "path": "skills/writing-for-agents/SKILL.md"
+    },
+    {
+      "name": "writing-fragments",
+      "description": "\"Writing, explore: mine raw fragments, no structure yet.\"",
+      "path": "skills/writing-fragments/SKILL.md"
+    },
+    {
+      "name": "writing-shape",
+      "description": "\"Writing, exploit: shape raw material into an article, paragraph by paragraph.\"",
+      "path": "skills/writing-shape/SKILL.md"
+    }
   ]
 }
